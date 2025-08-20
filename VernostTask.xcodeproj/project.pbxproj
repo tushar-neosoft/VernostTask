@@ -6,17 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		18CE8E652E55A6BA002DAC8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CE8E602E55A6BA002DAC8B /* Preview Assets.xcassets */; };
+		18CE8E662E55A6BA002DAC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CE8E622E55A6BA002DAC8B /* Assets.xcassets */; };
+		18CE8E672E55A6BA002DAC8B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE8E502E55A6BA002DAC8B /* DetailsView.swift */; };
+		18CE8E682E55A6BA002DAC8B /* ListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE8E532E55A6BA002DAC8B /* ListingModel.swift */; };
+		18CE8E692E55A6BA002DAC8B /* ListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE8E552E55A6BA002DAC8B /* ListingView.swift */; };
+		18CE8E6A2E55A6BA002DAC8B /* ListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE8E572E55A6BA002DAC8B /* ListingViewModel.swift */; };
+		18CE8E6B2E55A6BA002DAC8B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE8E5A2E55A6BA002DAC8B /* LoginView.swift */; };
+		18CE8E6C2E55A6BA002DAC8B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE8E5C2E55A6BA002DAC8B /* LoginViewModel.swift */; };
+		18CE8E722E55A744002DAC8B /* VernostTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE8E702E55A744002DAC8B /* VernostTaskApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		18CE8E252E54A393002DAC8B /* VernostTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VernostTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CE8E502E55A6BA002DAC8B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		18CE8E532E55A6BA002DAC8B /* ListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingModel.swift; sourceTree = "<group>"; };
+		18CE8E552E55A6BA002DAC8B /* ListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingView.swift; sourceTree = "<group>"; };
+		18CE8E572E55A6BA002DAC8B /* ListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewModel.swift; sourceTree = "<group>"; };
+		18CE8E5A2E55A6BA002DAC8B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		18CE8E5C2E55A6BA002DAC8B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		18CE8E602E55A6BA002DAC8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18CE8E622E55A6BA002DAC8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18CE8E702E55A744002DAC8B /* VernostTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VernostTaskApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		18CE8E272E54A393002DAC8B /* VernostTask */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = VernostTask;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18CE8E222E54A393002DAC8B /* Frameworks */ = {
@@ -32,7 +45,7 @@
 		18CE8E1C2E54A393002DAC8B = {
 			isa = PBXGroup;
 			children = (
-				18CE8E272E54A393002DAC8B /* VernostTask */,
+				18CE8E642E55A6BA002DAC8B /* VernostTask */,
 				18CE8E262E54A393002DAC8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +56,126 @@
 				18CE8E252E54A393002DAC8B /* VernostTask.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		18CE8E512E55A6BA002DAC8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E502E55A6BA002DAC8B /* DetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18CE8E522E55A6BA002DAC8B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E512E55A6BA002DAC8B /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		18CE8E542E55A6BA002DAC8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E532E55A6BA002DAC8B /* ListingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18CE8E562E55A6BA002DAC8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E552E55A6BA002DAC8B /* ListingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18CE8E582E55A6BA002DAC8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E572E55A6BA002DAC8B /* ListingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18CE8E592E55A6BA002DAC8B /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E542E55A6BA002DAC8B /* Model */,
+				18CE8E562E55A6BA002DAC8B /* View */,
+				18CE8E582E55A6BA002DAC8B /* ViewModel */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		18CE8E5B2E55A6BA002DAC8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E5A2E55A6BA002DAC8B /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18CE8E5D2E55A6BA002DAC8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E5C2E55A6BA002DAC8B /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18CE8E5E2E55A6BA002DAC8B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E5B2E55A6BA002DAC8B /* View */,
+				18CE8E5D2E55A6BA002DAC8B /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		18CE8E5F2E55A6BA002DAC8B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E5E2E55A6BA002DAC8B /* Login */,
+				18CE8E592E55A6BA002DAC8B /* Listing */,
+				18CE8E522E55A6BA002DAC8B /* Details */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		18CE8E612E55A6BA002DAC8B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E602E55A6BA002DAC8B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18CE8E642E55A6BA002DAC8B /* VernostTask */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E712E55A744002DAC8B /* Application */,
+				18CE8E6E2E55A6FB002DAC8B /* Resources */,
+				18CE8E5F2E55A6BA002DAC8B /* Core */,
+				18CE8E612E55A6BA002DAC8B /* Preview Content */,
+			);
+			path = VernostTask;
+			sourceTree = "<group>";
+		};
+		18CE8E6E2E55A6FB002DAC8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E622E55A6BA002DAC8B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18CE8E712E55A744002DAC8B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				18CE8E702E55A744002DAC8B /* VernostTaskApp.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +192,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				18CE8E272E54A393002DAC8B /* VernostTask */,
 			);
 			name = VernostTask;
 			packageProductDependencies = (
@@ -109,6 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CE8E652E55A6BA002DAC8B /* Preview Assets.xcassets in Resources */,
+				18CE8E662E55A6BA002DAC8B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CE8E672E55A6BA002DAC8B /* DetailsView.swift in Sources */,
+				18CE8E722E55A744002DAC8B /* VernostTaskApp.swift in Sources */,
+				18CE8E682E55A6BA002DAC8B /* ListingModel.swift in Sources */,
+				18CE8E692E55A6BA002DAC8B /* ListingView.swift in Sources */,
+				18CE8E6A2E55A6BA002DAC8B /* ListingViewModel.swift in Sources */,
+				18CE8E6B2E55A6BA002DAC8B /* LoginView.swift in Sources */,
+				18CE8E6C2E55A6BA002DAC8B /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +396,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,8 +424,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
