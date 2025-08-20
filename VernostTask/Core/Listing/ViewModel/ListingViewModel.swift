@@ -17,6 +17,7 @@ class ProductViewModel: ObservableObject,ProductServiceProtocol {
     @Published var errorMessage: String? = nil
     
     func fetchProducts(completion: @escaping (Result<[ListingModel], any Error>) -> Void) {
+        isLoading = true
                   guard let url = URL(string: "https://fakestoreapi.com/products") else {
                       completion(.failure(URLError(.badURL)))
                       return
@@ -32,6 +33,9 @@ class ProductViewModel: ObservableObject,ProductServiceProtocol {
                       }
                       do {
                           let products = try JSONDecoder().decode([ListingModel].self, from: data)
+                          DispatchQueue.main.async {
+                              self.isLoading = false
+                          }
                           completion(.success(products))
                       } catch {
                           completion(.failure(error))
@@ -42,30 +46,5 @@ class ProductViewModel: ObservableObject,ProductServiceProtocol {
 }
 
 
-//protocol ProductServiceProtocol {
-//      func fetchProducts(completion: @escaping (Result<[ListingModel], Error>) -> Void)
-// }
-//class ProductViewModel: ProductServiceProtocol,ObservableObject {
-//      func fetchProducts(completion: @escaping (Result<[ListingModel], Error>) -> Void) {
-//          guard let url = URL(string: "https://fakestoreapi.com/products") else {
-//              completion(.failure(URLError(.badURL)))
-//              return
-//          }
-//          URLSession.shared.dataTask(with: url) { data, response, error in
-//              if let error = error {
-//                  completion(.failure(error))
-//                  return
-//              }
-//              guard let data = data else {
-//                  completion(.failure(URLError(.badServerResponse)))
-//                  return
-//              }
-//              do {
-//                  let products = try JSONDecoder().decode([ListingModel].self, from: data)
-//                  completion(.success(products))
-//              } catch {
-//                  completion(.failure(error))
-//              }
-//          }.resume()
-//      }
-// }
+
+
